@@ -1,18 +1,25 @@
 {
-  "name": "workspace",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {
-    "preinstall": "node -e \"if(!process.env.npm_config_user_agent?.startsWith('pnpm')){process.stderr.write('Use pnpm instead\\n');process.exit(1)}\" && node -e \"const fs=require('fs');['package-lock.json','yarn.lock'].forEach(f=>{try{fs.unlinkSync(f)}catch{}})\"",
-    "build": "pnpm run typecheck && pnpm -r --if-present run build",
-    "typecheck:libs": "tsc --build",
-    "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck"
-  },
+  "name": "raisc-robotics-club",
   "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "@replit/connectors-sdk": "^0.4.3"
+    "@react-three/drei": "^9.114.0",
+    "@react-three/fiber": "^8.17.10",
+    "gsap": "^3.12.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.169.0"
   },
   "devDependencies": {
-    "prettier": "^3.9.6",
-    "typescript": "~5.9.3"
+    "@tailwindcss/vite": "^4.1.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.1.0",
+    "vite": "^5.4.11"
+  }
 }
