@@ -1,61 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RAICS — Robotics &amp; AI Club | GKCIET, Malda</title>
-  <meta name="description" content="RAICS is the premier Robotics &amp; AI Club of GKCIET, Malda. Building autonomous systems, IoT hardware, and embedded intelligence." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-  <script type="module" src="/src/main.js"></script>
-</head>
-<body>
-
-  <!-- Loader (static — must be present before JS loads) -->
-  <div id="loader" aria-hidden="true">
-    <div class="loader-inner">
-      <div class="loader-logo">
-        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="30,4 56,18 56,46 30,60 4,46 4,18"
-                   stroke="#00f0ff" stroke-width="2" fill="none" class="hex-stroke"/>
-          <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle"
-                font-family="Syne" font-weight="800" font-size="13" fill="#00f0ff">R</text>
-        </svg>
-      </div>
-      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
-      <span class="loader-label mono">INITIALIZING RAICS v2.0</span>
-    </div>
-  </div>
-
-  <!-- Nav (static — rendered before sections load) -->
-  <nav id="navbar" role="navigation" aria-label="Main navigation">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo" id="nav-logo-link" aria-label="RAICS Home">
-        <svg viewBox="0 0 40 40" fill="none" class="nav-hex-icon">
-          <polygon points="20,2 38,11 38,29 20,38 2,29 2,11"
-                   stroke="#00f0ff" stroke-width="1.5" fill="rgba(0,240,255,0.06)"/>
-          <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle"
-                font-family="Syne" font-weight="800" font-size="12" fill="#00f0ff">R</text>
-        </svg>
-        <span class="nav-brand">RAICS</span>
-      </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="nav-links" role="list">
-        <li><a href="#hero"     class="nav-link" id="nav-hero">Home</a></li>
-        <li><a href="#mentors"  class="nav-link" id="nav-mentors">Mentors</a></li>
-        <li><a href="#members"  class="nav-link" id="nav-members">Members</a></li>
-        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
-        <li><a href="#contact"  class="nav-link nav-cta" id="nav-contact">Connect</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Dynamic section mount point -->
-  <main id="app" role="main"></main>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GKCIET ROBOTICS CLUB RAISC — Engineering the Future</title>
+    <meta name="description" content="GKCIET Robotics Club RAISC — exploring robotics, AI and automation. Join us." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
